@@ -1,0 +1,641 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.navbar{
+    height:60px;
+    background-color:#0f1111;
+    color:white;
+
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+.nav-logo{
+    height:60px;
+    width:130px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#amazon-logo{
+    background-image:url("amazon-removebg-preview-012.png");
+    background-size: cover;
+    height:50px;
+    width:100%;
+}
+
+/*Transparent border isliye diya hai taaki Hover krne pe elements ke dynamics me koi change na aae*/
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white;
+}
+
+
+
+/* Nav Bar Box 2 styling */
+
+/* Hum apne font-sizes ko rem ki form me likhenge rather than px, bcoz isse hmaari website thosi responsive bnti hai, taaki width change hone se root element ke hisaab se hi font-size adjust ho jaae */
+
+.address-icon{
+    display:flex;
+}
+
+.address-first{
+    margin-left:15px;
+    font-size:0.85rem;
+    color:#CCCCCC;
+}
+
+.address-second{
+    margin-left:4px;
+    font-size:1rem;
+    font-weight:700;
+}
+
+
+
+/* Nav bar box 3 styling */
+
+.nav-search{
+    display:flex;
+    justify-content:space-evenly;
+    /* background-color:rgb(245, 147, 10); */
+    height:40px;
+    width:800px;
+    /* align-items:center; */
+    border-radius:5px; 
+    /* Ye sirf right side me curve hoga, bcoz left side me hme select ko bhi to curve krna padega, otherwise uska square will override our curved portion */
+}
+
+.nav-search:hover{
+    border:2px solid orange;
+}
+
+.search-select{
+    background-color: #E6E6E6;
+    height:40px;
+    width:60px;
+    text-align:center;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border:none; 
+    color:rgb(110, 111, 109);
+    /* None krne se select ka jo by default border hai vo hat jaaega */
+}
+
+.search-input{
+    /* height:40px; */
+    width:100%;
+    /* 100% krne se jitna bhi khaali bacha hua area tha vo isne occupy kr liya, to bas mujhe select & icon ka area specify krna hai baaki ye input box apne aap set ho jaaega*/
+    font-size:1.2rem;
+    border:none; 
+    /* Default border hatt jaaega input ka */
+}
+
+.search-icon{
+    /* height:40px; */
+    width:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#0f1111;
+
+    /* color:black; */
+    /* Search icon ka color hmaare background-color jaisa hai, ya fir black bhi set kr skte hai */
+    
+    font-size:1.3rem;
+    /* background-color:rgb(242, 174, 80); Iss trh se hit and trial ke through bhi hum original website ke jaisa color create kr skte hai */
+    background-color:#febd68;
+
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+
+/* Language box */
+
+.language{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+}
+
+.us-flag{
+    height:25px;
+    margin-right:2px;
+}
+
+.language-select{
+    font-size:1rem;
+    font-weight:700;
+    border:none;
+    background-color:#0f1111;
+    color:white;
+}
+
+
+/* Sign in box */
+
+.signin-hello{
+    font-size:0.85rem;
+    color:#CCCCCC;
+    padding-left:5px;
+}
+
+.signin-select{
+    font-size:1rem;
+    font-weight:700;
+    border: none;
+    background-color: #0f1111;
+    color:white;
+    /* padding:0px; */
+}
+
+
+    
+/* Return & orders box */
+
+.nav-return-para1{
+    font-size:0.85rem;
+    color:#CCCCCC;
+}
+
+.nav-return-para2{
+    font-size:1rem;
+    font-weight:700;
+}
+
+
+
+/* Cart logo & text box */
+
+.cart-logo-img{
+    height:50px;
+}
+
+.nav-cart{
+    display:flex;
+    /* padding-top:12px; */
+}
+
+.nav-cart-text{
+    font-size:1rem;
+    font-weight:700;
+    padding-top:25px;
+}
+    
+
+
+
+/* Second Panel */
+
+.panel-menu{
+    
+    display:flex;
+    color:white;
+
+}
+
+.panel{
+    height:40px;
+    width:100%;
+    background-color:#232c41;
+    display:flex;
+    align-items:center;
+}
+
+.panel-headings{
+    width:500px;
+    /* background-color: red; */
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/* Iss trh se ek div ke andar vale eleemnts me CSS lgaa skte hai */
+.panel-headings a{
+    text-decoration:none;
+    color:white;
+    font-size:1rem;
+}
+
+.panel-menu-text{
+    margin-left:5px;
+}
+
+.panel-menu{
+    margin-left:20px;
+    font-size:1.1rem;
+    font-weight:700;
+}
+    
+.blank-div{
+    width:750px;
+}
+
+.panel-deals-text{
+    color:white;
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+
+/* Header section Completed, now main content begins */
+
+
+
+/* Hero section */
+
+.hero-section{
+    height:350px;
+    width:100%;
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+
+    /* Iss hero section ko hmne display flex isliye kiya hai taaki hm Hero message ko neeche shift kr ske....akign-items krdo flex-end, isse hero message poora image ke bottom me shift ho jaaega....Ab m=bottom se margin dedo accordingly */
+
+    /*align-items : flex-start, flex-end.....same with justify -content......Flex start mtlb saare boxes apne asli order me hi rahenge, flex-end mtlb saare boxes ki position reverse ho jaaegi....Isiliye flex end krte hi sbse upr likha hua hero message fat se bottom pe chipak gya*/
+
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message{
+    /* text-align:center; */
+    height:40px;
+    width:95%;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* padding-top:400px; */
+    margin-bottom:50px;
+    font-size:1.02rem;
+}
+
+/* hero-message class ke andar jo anchor tags hai unke liye CSS */
+.hero-message a{
+    color:#007185;
+    text-decoration:none;
+    /* font-weight:700; */
+}
+
+.hero-message a:hover{
+    text-decoration:underline;
+    color:rgb(184, 87, 57);
+}
+
+
+
+/* Shopping section */
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+.shopping-section{
+    display:flex;
+    flex-wrap:wrap;
+    height:1870px;
+    width:100%;
+    background-color: rgb(206, 203, 203);
+    /* background-color:rgb(250, 228, 221); */
+    justify-content:space-evenly;
+    padding-top:40px;
+}
+
+.box{
+    height:440px;
+    width:350px;
+    background-color: white;
+    /* margin-top:40px; */
+    /* margin-bottom:20px; */
+    margin-left:0px;
+}
+
+.box-heading{
+    font-size:25px;
+    font-weight:700;
+    /* margin:5%; */
+    margin-bottom:2%;
+    margin-top:7%;
+    margin-left:5%;
+}
+
+.box-img{
+    height:70%;
+    width:90%;
+    margin-left:5%;
+    margin-bottom:7%;
+}
+
+.box-anchor{
+    color:#007185;
+    text-decoration:none;
+    /* font-weight:700; */
+    /* margin-top:90%; */
+    margin-left:5%;
+    
+}
+
+.box-anchor:hover{
+    text-decoration:underline;
+    color:rgb(184, 87, 57);
+}
+
+
+
+
+/* Footer sign-in section */
+
+
+#sign-in-hr{
+    margin-top:40px;
+    width:95%;
+    margin-left:2.2%;
+}
+
+
+.personalized-recommendations{
+    background-color: white;
+    height:90px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:0px;
+}
+
+
+#personalized-reccom{
+    width:230px;
+    height:28px;
+    border-radius:5px;
+    background-color:rgb(247, 203, 28);
+    font-weight:700;
+    margin:4px;
+    font-size:1rem;
+}
+
+#sign-in-a{
+    text-decoration:none;
+    color:#007185;
+}
+
+#sign-in-a:hover{
+    text-decoration:underline;
+    color:rgb(184, 87, 57);
+}
+
+#pr-para1{
+    font-size:1rem;
+}
+
+#pr-para2{
+    font-size:0.9rem;
+}
+
+
+
+
+/* Footer Section */
+
+.back-to-top{
+    height:50px;
+    width:100%;
+    background-color:#37475a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:40px;
+
+}
+
+
+.get-to-know-us{
+    /* background-color:#232a3b; */
+    background-color:#222e3b;
+
+    height:420px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    /* margin-top:30px; */
+    padding-top:50px;
+    /* padding-left:100px; */
+}
+
+
+.know-us{
+    height:400px;
+    width:260px;
+    /* background-color: green; */
+    
+}
+
+.know-us-para{
+    font-size:1.2rem;
+    color:white;
+    font-weight:700;
+}
+
+
+.get-to-know-us ul li{
+    color:#CCCCCC;
+    font-size:1rem;
+    line-height:40px;
+}
+
+
+/* .footer-english{
+    height:200px;
+    width:100%;
+    background-color: green; */
+
+
+.footer-english{
+    height:120px;
+    width:100%;
+    background-color:#222e3b;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* padding-top:30px; */
+}
+
+.footer-eng-logo{
+    height:50px;
+    width:120px;
+    /* background-image:url("mazon-removebg-preview-012.png"); */
+    background-size: contain;
+    margin-right:60px;
+}
+
+.real-footer-logo{
+    background-image:url("amazon-removebg-preview-012.png");
+    background-size: cover;
+    height:50px;
+    width:100%;
+}
+
+.footer-eng-content{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height:40px;
+    width:500px;
+    color:#CCCCCC;
+}
+
+.footer-eng-select{
+    height:35px;
+    width:120px;
+    /* background-color: green; */
+    border-radius:3px;
+    border:1px solid white;
+    background-color:#232a3b;
+    color:#CCCCCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding:10px; */
+}
+
+.eng-select-select{
+    background-color:#232a3b;
+    color:#CCCCCC;
+    border:none;
+    font-size:0.9rem;
+    width:90px;
+}
+
+
+.footer-eng-usd{
+    height:35px;
+    width:150px;
+    /* background-color: green; */
+    border-radius:3px;
+    border:1px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.9em;
+}
+
+.footer-eng-us{
+    height:35px;
+    width:150px;
+    /* background-color: green; */
+    border-radius:3px;
+    border:1px solid white;
+    
+}
+
+/* .footer-logo-ke-upr{
+    width:0.5px;
+} */
+
+.select-globe img{
+    height:17px;
+    margin-top:5.5px;
+    margin-right:2px;
+}
+
+.footer-us-flag-img{
+    height:20px;
+    display:flex;
+    align-itens:center;
+}
+
+
+.footer-eng-us{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size:0.9em;
+}
+
+.footer-last-content{
+    height:600px;
+    width:100%;
+    background-color:#111820;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    /* margin:10px; */
+    /* margin-left:50px; */
+
+}
+
+.footer-content1{
+    height:100px;
+    width:100px;
+    margin-right:50px;
+    margin-left:50px;
+    /* background-color: green; */
+    /* color:white; */
+}
+
+.footer-content1-para1{
+    color:white;
+    font-size:1rem;
+    font-weight:700;
+}
+
+.footer-content1-para2{
+    color:#CCCCCC;
+    font-size:0.9rem;
+}
+
+.last-section{
+    background-color:#111820;
+    color:white;
+    text-align:center;
+}
+
+
+
+
+.last-section-line1{
+    display:flex;
+    justify-content:center;
+    padding-top:50px;
+    /* line-height:40px; */
+}
+
+.last-section-line1 p{
+    width:170px;
+}
+
+.last-sec-line1-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* padding:10px; */
+}
+
+.last-sec-line1-div img{
+    height:15px;
+    margin-left:10px;
+}
+
+
+.last-section-line2{
+    padding-bottom:50px;
+    padding-top:10px;
+}
+
